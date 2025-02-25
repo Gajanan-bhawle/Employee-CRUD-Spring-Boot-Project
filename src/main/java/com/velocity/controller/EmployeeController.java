@@ -28,7 +28,7 @@ public class EmployeeController {
 		return service.getAllEmployees();
 	}
 
-	@GetMapping("/{id}")
+	@GetMapping("/emp{id}")
 	public Optional<Employee> getEmployeeById(@PathVariable int id) {
 		return service.getEmployeeById(id);
 	}
